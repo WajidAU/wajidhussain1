@@ -3,102 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Html and Css project</title>
     <style>
-             body{
-                padding: 0;
-                margin: 0;
-             }
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
-             .container{
-                background-color: rgba(8, 126, 53, 0.61);
-                height: 550px;
-                width: 550px;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                margin-top: 50px;
-                border-radius: 20px;
-                
+        .header{
+            position:relative;
+            background-color: blue;
+            height: 90px;
+            width: 100%;
+        }
 
-             }
+        nav{
+            position: absolute;
+            color: white;
+            display: flex;
+            gap: 25px;
+            margin-top: 13px;
+            margin-left: 500px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 17px;
+        }
 
-             input{
-                height: 25px;
-                width: 250px;
-                position: relative;
-                background-color: aqua;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                margin-top: 10px;
-                text-decoration: none;
-                border-style: none;
-                text-align: center;
-                border-radius: 10px;
-                justify-content: center;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-                
-             }
+        .portfolio{
+            color: red;
+            text-decoration: underline;
+        }
 
-             .botton{
-                position:absolute;
-                margin-left: 50%;
-                transform: translateX(-50%);
-                 
-             }
+        .portfolio:hover{
+            color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+            text-decoration: underline;
+        }
 
-             .login{
-                height: 30px;
-                width: 80px;
-                background-color: aqua;
-                border-radius: 8px;
-                margin-left: 170px;
-                color: green;
-                padding: 5px;
-                padding-left: 20px;
-                text-align: center;
-                margin-top: 20px;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-                border-style: none;
-             }
+        .services:hover{
+            color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+            text-decoration: underline;
 
-            input::placeholder{
-                margin: 10px;
-                margin-top: 200px;
-                color: green;
+        }
+
+        .projects:hover{
+            color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+            text-decoration: underline;
+
+        }
+
+        .experience:hover{
+            color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+            text-decoration: underline;
+
+        }
+
+        .educaton:hover{
+            color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+            text-decoration: underline;
+
+        }
+
+        .button{
+            position: absolute;
+            background-color: white;
+            display: flex;
+            right: 0;
+            margin-right: 40px;
+            border-style: none;
+            padding: 8px;
+            padding-left: 18px;
+            padding-right: 18px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .button:hover{
+            background-color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+            text-decoration: underline;
             
-            }
-            .email{
-                margin-top: 250px
-            }
+        }
 
-            .container h1{
-                position: absolute;
+        .name{
+            position: absolute;
+            display: flex;
+            color: white;
+            margin-left: 25px;
+            margin-top: 35px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .names{
+            position: absolute;
+            display: flex;
+            color: red;
+            margin-left: 66px;
+            margin-top: 35px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .container{
+            position: relative;
+            background-color: black;
+            height: 550px;
+            width: 100%;
+        }
+
+        .circle{
+            position: absolute;
+            border-style: solid;
+            border-color: red;
+            height: 350px;
+            width: 350px;
+            margin-left: 100px;
+            margin-top: 100px;
+            border-radius: 100%;
+        }
+
+        img{
+            height:100%;
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        .content{
+            position: absolute;
+            margin-left: 650px;
+            margin-top: 150px;
+            color: white;
+        }
+
+        .hi{
+            
+            font-weight: bold;
+            font-size: 25px;
+                               
+         }
+
+        .im{
+            font-weight: bold;
+            font-size: 30px;
+            
+
+        }
         
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
-                color: rgb(92, 235, 156);
-                margin-top: 100px;
-                margin-left: 170px;
-            }
+        .a{ 
+        font-weight: bold;
+        font-size: 35px;
 
+        }
+
+        .waj{
+            color: red;
+        }
+
+        .devel{
+            color: red;
+        }
+
+        .lorem{
+            margin-right: 150px;
+        }
+
+        .btns{
+            padding: 6px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-style: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: medium;
+        
+        }
+
+        .btnss{
+        
+            padding: 6px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-style: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: medium;
+            
+        }
+
+        .btns:hover{
+            background-color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+
+        }
+
+        .btnss:hover{
+            background-color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+
+        }
+
+        .bigbox{
+            position: relative;
+            background-color: rgb(247, 242, 232);
+            height: 633px;
+            width: 100%;
+        }
+
+        .box{
+            position: absolute;
+            background-color: rgb(194, 216, 224);
+            height: 560px;
+            width: 500px;
+            margin-top:40px;
+            margin-left: 440px;
+            border-radius: 8px;
+        }
+
+        .contacts{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 200px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .abcd{
+            position: absolute;
+            margin-left: 140px;
+            margin-top: 70px;
+        }
+
+        input{
+            position: relative;
+            text-align: center;
+            margin-top: 10px;
+            padding: 6px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 6px;
+            border-style: solid;
+        }
+
+        .message{
+            
+            margin-top: 10px;
+            margin-left: 50px;
+            padding-bottom: 40px;
+            
+        }
+
+          .send{
+            position: absolute;
+            margin-left: 41%;
+            margin-top: 350px;
+            padding: 6px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: bold;
+            border-radius: 6px;
+          }
+
+          .send:hover{
+            background-color: red;
+            transform: scale(1.1);
+            transition: 0.9s;
+          }
     </style>
 </head>
 <body>
-    <form action="submit.php">
-    <div class="container"> <h1>Enter details</h1>
+    <div class="header">
+        <nav>
+            <h4 class="portfolio">Portfolio</h4>
+            <h4 class="services">Services</h4>
+            <h4 class="projects">Projects</h4>
+            <h4 class="experience">Experience</h4>
+            <h4 class="educaton">Education</h4>
+           
+        </nav>
+
+        <button class="button">Contact Me</button>
+
+        <span class="name">Wajid</span>  <span class="names">Hussain</span>
+    
+    </div>
+
+    <div class="container"> 
+        
+        <section class="content">
+            
+            <div class="hi">Hi</div>
+            <div class="im">I'm <span class="waj">Wajid Hussain</span> </div>
+            <div class="a">a Frontend <span class="devel"> Developer </span> </div>
+        
+            <div> 
+                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nemo saepe consequuntur maiores, perferendis odio voluptas excepturi laboriosam dolore! Autem quod dignissimos reprehenderit natus voluptates id nesciunt iure ex. Ea.</p>
+            </div>
+
+            <div>
+                <button class="btns"> Hire Me </button>
+                <button class="btnss">Experience</button>
+        
+        </div>
+        
+        
+        </section>
+        <div class="circle">
+            <img src="IMG_20241128_155934.jpg" alt="Error image loading">
+        </div>
+
+    </div>
+
+    <div class="bigbox">
+        <div class="box">
+         <div class="contacts">
+            <span>Contact</span>
+            <span class="red">Me</span>
+         </div>
+
+        <form action="backend.php">
+            <div class="abcd">
+         <div>
+            <input type=" text" placeholder="Full Name">
+        </div>
         <div>
-        <input class="email" type="email" placeholder="Enter your email">
-    </div>
-    <div>
-        <input type="password" placeholder="Enter your password" required>
-    </div>
-    <div class="botton">
-        <button class="login">Login</button>
+            <input type=" email" placeholder="Email">
+        </div>
+        <div>
+            <input type=" phone number" placeholder="Phone Number">
+        </div>
+        <div>
+            <input type=" subject" placeholder="Subject">
+        </div>
+        <div>
+        <textarea name="text" placeholder="Your Message" class="message"></textarea>
     </div>
     </div>
 
-     </form>
+    <button class="send">Send Message</button>
+    </form>
+            
+         
+
+        </div>
+           
+    </div>
+
 </body>
 </html>
